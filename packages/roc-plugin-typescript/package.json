@@ -14,11 +14,13 @@
   ],
   "keywords": [
     "roc",
-    "roc-plugin"
+    "roc-plugin",
+    "typescript",
+    "webpack"
   ],
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/Naycon/roc-plugin-typescript"
   },
   "dependencies": {
     "roc": "^1.0.0-rc"
