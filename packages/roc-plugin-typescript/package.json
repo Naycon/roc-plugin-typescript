@@ -6,10 +6,7 @@
   "version": "0.0.1",
   "main": "lib/index.js",
   "scripts": {
-    "rid": "rid",
-    "build": "rid build",
-    "lint": "rid lint:alias",
-    "link": "rid link",
+    "lint": "eslint .",
     "test": "npm run lint"
   },
   "files": [
