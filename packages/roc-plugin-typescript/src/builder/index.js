@@ -1,3 +1,5 @@
+import path from 'path';
+
 export default () => ({ previousValue: rocBuilder }) => () => () => {
     const {
         buildConfig,
@@ -20,6 +22,9 @@ export default () => ({ previousValue: rocBuilder }) => () => () => {
         loader: 'source-map-loader'
     };
     buildConfig.module.preLoaders.push(tsPreLoader);
+
+    const modulesPath = path.join(__dirname, '../../node_modules');
+    rocBuilder.buildConfig.resolveLoader.root.push(modulesPath);
 
     return {
         buildConfig,
