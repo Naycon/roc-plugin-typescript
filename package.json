@@ -5,6 +5,7 @@
   "scripts": {
     "rid": "rid",
     "build": "rid build",
+    "clean": "rid clean",
     "lint": "rid lint:alias",
     "link": "rid link",
     "test": "npm run lint"
