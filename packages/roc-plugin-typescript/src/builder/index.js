@@ -1,5 +1,5 @@
 export default () => ({ previousValue: rocBuilder }) => () => () => {
-    let {
+    const {
         buildConfig,
         builder,
         info
