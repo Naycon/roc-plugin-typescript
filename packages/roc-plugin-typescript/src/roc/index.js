@@ -10,7 +10,7 @@ export default {
         typescript: {
             hook: 'build-webpack',
             action: builder,
-            description: 'Compiles *.ts and *.tsx files'
+            description: 'Adds typescript support to Webpack.'
         }
     }
 };
