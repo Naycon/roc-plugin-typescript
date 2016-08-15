@@ -1,0 +1,37 @@
+{
+  "name": "roc-plugin-typescript",
+  "description": "A roc plugin for compiling typescript (*.ts and *.tsx) files",
+  "author": "Johan Persson",
+  "license": "MIT",
+  "version": "0.0.1",
+  "main": "lib/index.js",
+  "scripts": {
+    "rid": "rid",
+    "build": "rid build",
+    "lint": "rid lint:alias",
+    "link": "rid link",
+    "test": "npm run lint"
+  },
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "roc",
+    "roc-plugin"
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "dependencies": {
+    "roc": "^1.0.0-rc"
+  },
+  "devDependencies": {
+    "babel-eslint": "~5.0.0",
+    "eslint": "~1.10.3",
+    "eslint-config-vgno": "~5.0.0",
+    "source-map-loader": "^0.1.5",
+    "ts-loader": "^0.8.2",
+    "typescript": "^1.8.10"
+  }
+}
