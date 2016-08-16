@@ -7,7 +7,7 @@ typescript files and adds source maps via
 ## How to use?
 Add the plugin as a dev dependency of your [roc](http://www.getroc.org) application:
 ```
-npm install --save-dev Naycon/roc-plugin-typescript
+npm install --save-dev roc-plugin-typescript
 ```
 
 The plugin will automatically hook into webpacks build process and add a loader
