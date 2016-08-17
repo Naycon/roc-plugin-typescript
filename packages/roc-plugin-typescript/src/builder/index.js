@@ -10,14 +10,14 @@ export default () => ({ previousValue: rocBuilder }) => () => () => {
     buildConfig.resolve.extensions.push('.ts', '.tsx');
 
     // All files with a '.ts' or '.tsx' extension will be handled by 'ts-loader'.
-    var tsLoader = {
+    const tsLoader = {
         test: /\.tsx?$/,
         loader: 'ts-loader'
     };
     buildConfig.module.loaders.push(tsLoader);
 
     // All output '.js' files will have any sourcemaps re-processed by 'source-map-loader'.
-    var tsPreLoader = {
+    const tsPreLoader = {
         test: /\.js$/,
         loader: 'source-map-loader'
     };
