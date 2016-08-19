@@ -7,6 +7,7 @@ export default () => ({ previousValue: rocBuilder }) => () => () => {
         info
     } = rocBuilder;
 
+    // Register extensions
     buildConfig.resolve.extensions.push('.ts', '.tsx');
 
     // Make sure ts and tsx files are processed by babel after being the typescript compiler is done
