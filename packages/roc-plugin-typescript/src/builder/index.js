@@ -9,6 +9,14 @@ export default () => ({ previousValue: rocBuilder }) => () => () => {
 
     buildConfig.resolve.extensions.push('.ts', '.tsx');
 
+    // Make sure ts and tsx files are processed by babel after being the typescript compiler is done
+    const babelLoader = {
+        test: /\.tsx?$/,
+        loader: 'babel-loader'
+    };
+    // (Webpack calls loaders in reverse order, so we add babel before typescript)
+    buildConfig.module.loaders.push(babelLoader);
+
     // All files with a '.ts' or '.tsx' extension will be handled by 'ts-loader'.
     const tsLoader = {
         test: /\.tsx?$/,
