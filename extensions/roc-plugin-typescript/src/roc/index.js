@@ -1,4 +1,4 @@
-import builder from '../builder';
+import webpack from '../webpack';
 
 export default {
     description: `
@@ -21,7 +21,7 @@ export default {
     actions: [{
         hook: 'build-webpack',
         description: 'Adds typescript support to Webpack.',
-        action: builder,
+        action: webpack,
     }],
     required: {
         'roc-package-webpack': '^1.0.0-beta.1',
