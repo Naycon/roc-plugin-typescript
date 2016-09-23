@@ -32,5 +32,10 @@
     "babel-eslint": "~5.0.0",
     "eslint": "~1.10.3",
     "eslint-config-vgno": "~5.0.0"
+  },
+  "roc": {
+    "plugins": [
+      "./lib/index.js"
+    ]
   }
 }
