@@ -1,4 +1,6 @@
-import webpack from '../webpack';
+import { lazyFunctionRequire } from 'roc';
+
+const lazyRequire = lazyFunctionRequire(require);
 
 export default {
     description: `
@@ -21,7 +23,7 @@ export default {
     actions: [{
         hook: 'build-webpack',
         description: 'Adds typescript support to Webpack.',
-        action: webpack,
+        action: lazyRequire('../webpack'),
     }],
     required: {
         'roc-package-webpack': '^1.0.0-beta.1',
