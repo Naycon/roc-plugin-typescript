@@ -1,6 +1,5 @@
 # roc-plugin-typescript
 
-# roc-plugin-typescript
 A roc plugin for compiling typescript (*.ts and *.tsx) files. It uses
 [ts-loader](https://github.com/TypeStrong/ts-loader) for to let webpack compile
 typescript files and adds source maps via
