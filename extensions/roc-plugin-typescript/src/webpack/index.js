@@ -18,14 +18,14 @@ export default () => () => (webpackConfig = {}) => {
     // All files with a '.ts' or '.tsx' extension will be handled by 'ts-loader'.
     const tsLoader = {
         test: /\.tsx?$/,
-        loader: 'ts-loader',
+        loader: 'ts-loader'
     };
     webpackConfig.module.loaders.push(tsLoader);
 
     // All output '.js' files will have any sourcemaps re-processed by 'source-map-loader'.
     const tsPreLoader = {
         test: /\.js$/,
-        loader: 'source-map-loader',
+        loader: 'source-map-loader'
     };
     webpackConfig.module.preLoaders.push(tsPreLoader);
 

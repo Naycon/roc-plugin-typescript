@@ -22,7 +22,7 @@ export default {
     actions: [{
         hook: 'build-webpack',
         description: 'Adds typescript support to Webpack.',
-        action: lazyRequire('../webpack'),
+        action: lazyRequire('../webpack')
     }],
     required: {
         'roc-package-webpack': '^1.0.0-beta.4'
