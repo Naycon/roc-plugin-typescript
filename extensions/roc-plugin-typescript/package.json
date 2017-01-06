@@ -3,7 +3,7 @@
   "description": "A roc plugin for compiling typescript (*.ts and *.tsx) files",
   "author": "Johan Persson",
   "license": "MIT",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "main": "lib/index.js",
   "scripts": {
     "lint": "eslint .",
