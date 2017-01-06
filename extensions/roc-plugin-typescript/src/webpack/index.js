@@ -1,15 +1,16 @@
 import path from 'path';
 
-export default ({ previousValue: prevWebpackConfig }) => () => () => {
-    const webpackConfig = { ...prevWebpackConfig };
-
+export default () => () => (webpackConfig = {}) => {
     // Register extensions
     webpackConfig.resolve.extensions.push('.ts', '.tsx');
 
+    const jsLoader = webpackConfig.module.loaders.find(loader => loader.id === 'babel');
+
     // Make sure ts and tsx files are processed by babel after being the typescript compiler is done
     const babelLoader = {
-        test: /\.tsx?$/,
-        loader: 'babel-loader',
+        ...jsLoader,
+        id: 'babel-ts',
+        test: /\.tsx?$/
     };
     // (Webpack calls loaders in reverse order, so we add babel before typescript)
     webpackConfig.module.loaders.push(babelLoader);
