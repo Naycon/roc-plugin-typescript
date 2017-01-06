@@ -25,6 +25,6 @@ export default {
         action: lazyRequire('../webpack'),
     }],
     required: {
-        'roc-package-webpack': '^1.0.0-beta.1',
-    },
+        'roc-package-webpack': '^1.0.0-beta.4'
+    }
 };
